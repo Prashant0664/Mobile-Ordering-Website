@@ -18,7 +18,7 @@ require('dotenv').config();
 app.use(
   cors(
     {
-      origin: [`${process.env.REACT_APP_BACKEND_URL}`, process.env.REACT_APP_FRONTEND_URL],
+      origin: [`${process.env.REACT_APP_BACKEND_URL}`, `${process.env.REACT_APP_FRONTEND_URL}`],
       methods: "GET,POST,PUT,DELETE",
       credentials: true,
     }
