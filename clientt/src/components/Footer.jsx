@@ -1,22 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 const Footer = ({ footerAPI: { titles, links } }) => {
-    const options = {
-        method: 'GET',
-        url: 'https://mobile-phones2.p.rapidapi.com/brands',
-        headers: {
-            'X-RapidAPI-Key': 'c1aec5ee1cmsh8778eb528fc673dp1de7e2jsnd436180229a1',
-            'X-RapidAPI-Host': 'mobile-phones2.p.rapidapi.com'
-        }
-    };
-    const func = async () => {
-        try {
-            const response = axios.request(options);
-            // console.log(response.data);
-        } catch (error) {
-            console.error(error);
-        }
-    }
+    
     return (
         <>
             <footer onClick={() => func()} className='bg-theme pt-7 pb-5'>
